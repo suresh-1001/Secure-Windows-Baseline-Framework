@@ -1,41 +1,45 @@
-# Phase 1 – GPO Security Baseline
+# Phase 2 – Telemetry & Data Exposure Control
 
 ## Overview
 
-This phase defines a structured Windows security baseline using Group Policy and local security policies to enforce a hardened configuration.
+This phase focuses on minimizing unnecessary outbound telemetry and reducing Windows data exposure settings in security-sensitive environments.
 
-The objective is to ensure:
+The objective is to:
 
-- Consistent security posture across endpoints
-- Reduced attack surface
-- Controlled administrative privileges
-- Baseline compliance alignment
-
----
-
-## Key Controls Modeled
-
-- Password complexity & lockout policy
-- Local administrator restrictions
-- SMB protocol hardening
-- Firewall enforcement
-- BitLocker policy baseline
-- Remote access restrictions
+- Limit diagnostic data transmission
+- Disable consumer experience features
+- Reduce tracking identifiers
+- Enforce privacy-aligned policies
 
 ---
 
-## Artifacts Included
+## Strategy
 
-- Security policy checklist
-- Recommended GPO settings documentation
+Telemetry controls are applied through:
+
+- Policy-based registry enforcement
+- Local security configuration
+- Advertising ID restriction
+- Feedback & cloud suggestion disablement
+
+---
+
+## Scripts Included
+
+- `telemetry-disable.ps1`
+
+The script:
+
+- Applies policy-based telemetry limits
+- Disables advertising identifiers
+- Enforces reduced data collection settings
 
 ---
 
 ## Intended Outcome
 
-A repeatable baseline that can be:
+A hardened Windows endpoint configuration with:
 
-- Applied via GPO
-- Validated via audit export
-- Rebuilt from scratch
-- Used as foundation for compliance alignment
+- Reduced outbound telemetry
+- Controlled user experience features
+- Baseline privacy alignment
