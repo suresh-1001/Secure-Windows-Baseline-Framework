@@ -2,7 +2,9 @@
 
 ## Overview
 
-This repository demonstrates a structured Windows hardening and configuration baseline framework designed for security-sensitive environments.
+This repository provides a structured Windows security hardening framework combining GPO baselines, telemetry controls, update governance, and automation-driven compliance validation.
+
+It mirrors enterprise desktop security deployment methodology.
 
 It includes:
 
